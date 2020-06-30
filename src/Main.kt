@@ -1,40 +1,55 @@
 fun main () {
-    var panjang: Int = 10
+    var nama: String = "haris "
+    var kalimat: String = "nama saya adalah "
+    var perkenalan: String = kalimat + nama
+    println(perkenalan)
+
+    nama = "hudha "
+    var namaSaya: String = "nama saya adalah ${nama}"
+    println(namaSaya)
+
+    var panjang: Int = 4
     var lebar: Int = 5
-    println(panjang)
-    println(lebar)
+    var kelilingPersegiPanjang: Int = panjang + lebar + panjang + lebar
+    println("keliling persegi panjang adalah ${kelilingPersegiPanjang}")
 
-    var nama: String = "Haris Miftahul Hudha"
-    println(nama)
+    var hasilPengurangan: Int = kelilingPersegiPanjang - panjang
+    println("hasil pengurangan dari ${kelilingPersegiPanjang} - ${panjang} adalah ${hasilPengurangan}")
 
-    var celcius: Float = 2.5f
-    println(celcius)
+    var luasPersegiPanjang: Int = panjang * lebar
+    println("hasil dari luas persegi panjang ${panjang} * ${lebar} adalah ${luasPersegiPanjang}")
 
-    var fahrenheit: Double = 3.5
-    println(fahrenheit)
+    var hasilPembagian: Int = luasPersegiPanjang / lebar
+    println("hasil dari pembagian ${luasPersegiPanjang} / ${lebar} adalah ${hasilPembagian}")
 
-    var apakahBerhasil: Boolean = false
-    println(apakahBerhasil)
+    var hasilModulus: Int = 7 % 3
+    println("hasil dari 7 % 3 adalah ${hasilModulus}")
 
-    var abjad: Char = 'a'
-    println(abjad)
+    // 3 * 2 = 6 + 1 = 7
+
+    var kelvin: Double = 5.0 / 9.0 * (20 - 23) + 273.0
+    println(kelvin)
 }
 
 /**
- * 1. Int (integer) digunakan untuk menampung data angka bilangan bulat
- *    contoh: 1, 2, 3, 10, 14, dll.
- * 2. String digunakan untuk menampung data berupa teks. penulisan sintaks tipe data String menggungakan petik 2 ("")
- *    contoh: "belajar kotlin", "nama saya haris", dll.
- * 3. Float digunakan untuk menampung data berupa angka bilangan pecahan. penulisan sintaks tipe data Float menggunakan huruf f di akhir angka
- *    contoh: 1.4f, 2.4f, 3.1f, dll.
- * 4. Double digunakan untuk menampung data berupa angka bilangan pecahan. dapat menampung dengan jumlah data yang lebih besar
- *    dari tipe data Float. penulisan sintaks tipe data Float tanpa menggunakan huruf f di akhir angka
- *    contoh : 1.5, 2.4, 3.7, dll.
- * 5. Boolean digunakan untuk menampung data berupa true atau false.
- * 6. Char digunakan untuk menampung data berupa karakter. penulisan sintaks tipe data Char menggunakan petik 1 ('')
- *    contoh : 'a', 'b', 'c', dll.
- *
-**/
+ * var = mutable = dapat dirubah nilainya / datanya
+ * val = immutable = tidak dapat dirubah nilainya / datanya
+ */
+
+/**
+ * Operator aritmatika Penjumlahan menggunakan simbol tambah atau plus (+)
+ * Operator aritmatika Pengurangan menggunakan simbol kurang (-)
+ * Operator aritmatika Perkalian menggunakan simbol bintang (*)
+ * Operator aritmatika Pembagian menggunakan simbol garis miring (/)
+ * Operator aritmatika Sisa bagi / Modulus menggunakan simbol persen (%)
+ */
+
+/**
+ * 1. "saya "
+ * 2. "adalah "
+ * 3. "budi"
+ * hasil = "saya adalah budi"
+ */
 
 
 
